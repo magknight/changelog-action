@@ -1,0 +1,15 @@
+name: "Changelog"
+description: "stuff to do with my changelog format"
+inputs:
+  inputFile: # id of input
+    description: "Input changelog.md file"
+    required: true
+    default: "./changelog.md"
+outputs:
+  changes: # id of output
+    description: "Not pretty"
+  prettyChanges: # id of output
+    description: "Pretty"
+runs:
+  using: "node12"
+  main: "changelog.js"
